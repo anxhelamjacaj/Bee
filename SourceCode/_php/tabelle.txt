@@ -1,0 +1,10 @@
+CREATE TABLE `beeuser` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `vname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `fname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `usrname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `passwort` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `gebtag` date COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`), UNIQUE (`email`),
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
