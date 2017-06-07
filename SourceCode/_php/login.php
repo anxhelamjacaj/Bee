@@ -1,7 +1,8 @@
 <?php 
 	
 	$pdo = new PDO('mysql:host=localhost;dbname=beeorganised', 'root', '');
-	 
+	//require('dbconnect.php');
+	
 	if(isset($_GET['login'])) {
 	 $usrname = $_POST['usrname'];
 	 $passwort = $_POST['passwort'];
